@@ -1,3 +1,4 @@
+//Client file for slient side or front end
 $( document ).ready(function() {
   $('.form').find('input, textarea').on('keyup blur focus', function (e) {
   
