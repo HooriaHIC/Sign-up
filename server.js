@@ -1,12 +1,12 @@
 'use strict';
 
-const express     = require('express');
-const bodyParser  = require('body-parser');
-const fccTesting  = require('./freeCodeCamp/fcctesting.js');
-const session     = require('express-session');
-const mongo       = require('mongodb').MongoClient;
-const routes      = require('./Routes.js');
-const auth        = require('./Auth.js');
+const express  = require('express');
+const bodyParser = require('body-parser');
+const fccTesting = require('./freeCodeCamp/fcctesting.js');
+const session = require('express-session');
+const mongo = require('mongodb').MongoClient;
+const routes = require('./Routes.js');
+const auth = require('./Auth.js');
 
 const app = express();
 
