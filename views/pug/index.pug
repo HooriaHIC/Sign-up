@@ -1,0 +1,50 @@
+html
+  head
+    title Home page
+    meta(name='description', content='A cool thing made with HyperDev')
+    link#favicon(rel='icon', href='https://hyperdev.com/favicon-app.ico', type='image/x-icon')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/public/style.scss')
+    link(href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600', rel='stylesheet', type='text/css')
+  body
+    img(src="http://www.lexiegt.com/wp-content/uploads/2017/09/LogoBranding-Hello-purple-background.png").imgcenter 
+    h2.center#pug-success-message
+  
+    #container.container
+      .form-container.sign-up-container
+        form(action='/register', method='post')
+          h1 Create Account
+            
+            input(type='text', placeholder='Full name', name='name')
+            input(type='text', placeholder='Name', name='username')
+            input(type='email', placeholder='Email', name='email')
+            input(type='date', placeholder='DOB', name='birthday')
+            input(type='password', placeholder='Password', name='password')
+            button(type='submit', value='Register') Sign Up
+      .form-container.sign-in-container
+        form(action='/login', method='post')
+          h1 Sign in
+          input(type='text', placeholder='Name', name='username')
+          input(type='password', placeholder='Password', name='password')
+          button(type='submit', value='Log In') Sign In
+      .overlay-container
+        .overlay
+          .overlay-panel.overlay-left
+            h1 Welcome, 
+            p Were so excited to see you again
+            button#signIn.ghost Sign In
+          .overlay-panel.overlay-right
+            h1 Hello,
+            p Sign Up and start your happy journey now
+            button#signUp.ghost Sign Up
+
+
+
+
+      
+        
+    script(src='https://code.jquery.com/jquery-2.2.1.min.js', integrity='sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=', crossorigin='anonymous')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='/public/client.js')
